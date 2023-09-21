@@ -1,0 +1,97 @@
+1. What is the result of `SELECT 1 + '2'?
+ANS  3  The database will typically convert the string '2' to its numeric equivalent and then perform the addition. So, the result of this operation will be 3.
+
+2. When you execute `SELECT COUNT(*)
+ FROM table_name`, what does it return?
+Ans  It will return count of rows.
+
+3. What happens if you run `SELECT MAX(column_name) FROM table_name` on an empty table?
+Ans  It will return max value (if you input the 'A' and 'B' then A HAVE ASCii value 65 and B have Ascii value 66 then it will RETURN 'A').
+
+4. When you execute `SELECT DISTINCT column_name FROM table_name`, what does it return?
+ANS  it will not give any duplicate data.
+
+5. If you perform `SELECT * FROM table_name LIMIT 5, 10`, what rows will it return?
+ANS IN SQL LIMIT is not a function 
+But In MY SQL it will return 5 to 10 rows.
+
+6. What is the output of `SELECT CASE WHEN 1 = 1 THEN 'True' ELSE 'False' END`?
+ANS- TRUE (BECAUSE 1=1 IT WILL CHECK BOOLEAN VALUE)
+
+7. When you execute `SELECT LENGTH('Hello')`, what does it return?
+ANS- LENGTH is not a function in Sql
+But IN MY SQL the output will be 5
+
+8. What does `SELECT COALESCE(NULL, 'Default')` return?
+ANS  Default (This query will return the value 'default' because the first expression in the list is NULL, and the COALESCE function returns the first non-null value, which is 'default' in this case.)
+
+9. If you run `SELECT DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i:%s')`, what format is the result in?
+ANS-  NOW is not a function in Sql
+
+10. What does `SELECT RAND()` return?
+ANS- It will give random value eg-45.5678
+
+11. What is the output of `SELECT 5 / 2`?
+ANS   2 (ACTUAL ANS IS 2.5 BUT NOT CONSIDERED DECIMAL VALUE)
+   
+12. When you execute `SELECT CONCAT('Hello', NULL)`, what does it return?
+ANS-  Hello
+
+13. What does `SELECT LEFT('OpenAI', 3)` produce?
+ANS   ope
+
+14. If you run `SELECT CASE WHEN 2 > 3 THEN 'A' WHEN 2 < 4 THEN 'B' ELSE 'C' END`, what's the result?
+ANS- B
+
+15. What is the output of `SELECT NOW() - INTERVAL 1 DAY`?
+ANS-  Error (NOW is not a function in sql)
+
+16. When you execute `SELECT IFNULL(NULL, 'Not Null')`, what does it return?
+Ans-  Error (Not a function in sql)
+
+17. What does `SELECT LENGTH(NULL)` return?
+Ans-   Length is not a function 
+    but SELECT LENGTH(NULL)   THE OUTPUT IS NULL
+
+18. If you run `SELECT SUBSTRING('abcdef', 3, 2)`, what does it return?
+ANS-  cd 
+
+19. What is the result of `SELECT 2 * 'A'`?
+ANS- Error ( converting the varchar value 'A' to data type int)
+
+20. When you execute `SELECT CASE WHEN NULL IS NULL THEN 'Yes' ELSE 'No' END`, what's the output?
+Ans   YES
+
+21. What does SELECT 1 = '1' evaluate to?
+ANS-Error
+ 
+22. When you run `SELECT DATE('2023-09-04')`, what type of data does it return?
+ANS  Error( Date is not a function.)
+
+23. What is the output of `SELECT REPLACE('Hello World', 'o', '0')`?
+Ans  Hell0 W0rld
+
+24. If you execute `SELECT 2 * POWER(3, 4)`, what's the result?
+Ans  162
+   (2*3^4)
+   (2*81)
+    162
+
+25. What does `SELECT IF(1 = 1, 'Yes', 'No')` return?
+Ans   Error (SELECT IS NOT A FUNCTION)
+
+26. When you run `SELECT TIMESTAMPDIFF(DAY, '2023-08-01', '2023-09-01')`, what's the output?
+ANS  Error (Timestamp is not a function)
+
+27. What is the result of `SELECT COALESCE(NULL, 'A', 'B')`?
+ANS  A (after null it will give 2nd parameter)
+
+28. If you execute `SELECT TRUNCATE(3.14159, 2)`, what's the value?
+ANS  Error (select is not a function)
+
+29. What does `SELECT LENGTH('Café')` return for a string containing special characters?
+ANS   Error because Length is not a function.
+     But SELECT LEN('Café') it will return 4
+
+30. When you run `SELECT NULL <> NULL`, what does it evaluate to?
+Ans   Error
